@@ -1,0 +1,1 @@
+(()=>{"use strict";var r={382:r=>{r.exports="data:image/png;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiMjNhYTAxYmFkYzhjNWEwMTYyMGFkNDYwOWM2NDM2NDMucG5nIjs="}},o={};function e(t){var s=o[t];if(void 0!==s)return s.exports;var Y=o[t]={exports:{}};return r[t](Y,Y.exports,e),Y.exports}(()=>{e(382);console.log("hello world")})()})();
