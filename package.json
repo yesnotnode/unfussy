@@ -2,19 +2,22 @@
   "name": "unfussy",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --progress --config webpack.config.build.js",
-    "development": "webpack serve --progress --config webpack.config.development.js",
-    "start": "npm run development"
+    "backend:build": "node app.js",
+    "backend:development": "nodemon app.js",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "frontend:development": "webpack serve --progress --config webpack.config.development.js",
+    "dev": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yesnotnode/unfussy.git"
   },
-  "author": "Eric Delacruz @yesnotno",
+  "author": "Eric Delacruz @yesnotnode",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.0.0",
     "copy-webpack-plugin": "^10.0.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
@@ -39,5 +42,10 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
   }
 }
