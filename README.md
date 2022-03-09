@@ -1,3 +1,3 @@
-#MOODY
+# MOODY
 
--WebGL Project Boilerplate
+WebGL Project Boilerplate
